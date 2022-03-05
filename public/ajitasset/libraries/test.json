@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Mechanics",
+		"location": "Gwarimpa"
+	},
+	{
+		"name": "Mechanics",
+		"location": "Lokogoma"
+	},
+    {
+		"name": "Mechanics",
+		"location": "Lagos"
+	},
+    {
+		"name": "Vulcanizers",
+		"location": "Lokogoma"
+	},
+    {
+		"name": "Filling sations",
+		"location": "Lokogoma"
+	},
+    {
+		"name": "Drivers",
+		"location": "Lokogoma"
+	}
+]

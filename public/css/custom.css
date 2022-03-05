@@ -1,0 +1,428 @@
+#logo1 {
+  position: inherit;
+  width: 200px;
+  margin: 0 auto;
+}
+#left-side {
+  background: url(../img/Side-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+#left-side-biz {
+  background: url(../img/Side-bg.png);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+#left-side-user {
+  background: url(../img/Side-bg.png);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+
+#left-sidebg {
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+  padding-top: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+  right-side-biz {
+    background: url(../img/sign-in-business.png);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+}
+/* #right-side {
+    background: url(../img/photos/right-hex.jpg);
+    background-size: contain;
+} */
+
+#sign {
+  text-align: center;
+  font-weight: 700;
+  color: #35d187;
+  font-size: 55px;
+}
+
+.form-label {
+  color: #35d187;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(105, 105, 105);
+  opacity: 0.5; /* Firefox */
+}
+
+#login_button {
+  background: #35d186;
+  width: 50%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#login_button:hover {
+  box-shadow: 2 2 rgb(15, 15, 15);
+}
+
+
+
+/* custom input effect */
+
+.effect-20 {
+  border: 1px solid #ccc;
+  transition: 0.4s;
+  padding: 10px 15px;
+  background: transparent;
+  width: 100%;
+}
+
+.effect-20 ~ .focus-border:before,
+.effect-20 ~ .focus-border:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #35d187;
+
+  transition: 0.3s;
+}
+.effect-20 ~ .focus-border:after {
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+}
+.effect-20 ~ .focus-border i:before,
+.effect-20 ~ .focus-border i:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background-color: #35d187;
+
+  transition: 0.4s;
+}
+.effect-20 ~ .focus-border i:after {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+ 
+}
+.effect-20:focus ~ .focus-border:before,
+.effect-20:focus ~ .focus-border:after,
+.has-content.effect-20 ~ .focus-border:before,
+.has-content.effect-20 ~ .focus-border:after {
+  width: 100%;
+  transition: 0.3s;
+}
+.effect-20:focus ~ .focus-border i:before,
+.effect-20:focus ~ .focus-border i:after,
+.has-content.effect-20 ~ .focus-border i:before,
+.has-content.effect-20 ~ .focus-border i:after {
+  height: 100%;
+  transition: 0.4s;
+}
+.effect-20::placeholder {
+  position: absolute;
+  left: 14px;
+  width: 100%;
+  top: 15px;
+  color: #aaa;
+  transition: 0.3s;
+  z-index: -1;
+  letter-spacing: 0.5px;
+}
+.effect-20:focus::placeholder,
+.has-content.effect-20::placeholder {
+  top: -23px;
+  left: 0;
+  font-size: 18px;
+  color: #35d187;
+  transition: 0.3s;
+}
+
+#input-form {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+
+#modebd {
+  background: rgb(255, 255, 255);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2.0px );
+  -webkit-backdrop-filter: blur( 2.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#formbtnz {
+  margin-left: 15px;
+}
+
+/* preloader */
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+  background: green;
+	background: url('../img/ajit_logo.png');
+}
+
+.nav-item::marker {
+  content: none;
+}
+
+#googleMap {
+  position: fixed !important;
+}
+
+.avatar {
+  border: 1px solid #34d186;
+}
+
+/* Animation */
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+@keyframes bounceInUp {
+  0% {
+     opacity: 0;
+     transform: translateY(2000px);
+  }
+  60% {
+     opacity: 1;
+     transform: translateY(-30px);
+  }
+  80% {
+     transform: translateY(10px);
+  }
+  100% {
+     transform: translateY(0);
+  }
+} 
+
+.bounceInUp {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100000000;
+}
+
+.overlay .overlayDoor:before, .overlay .overlayDoor:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  -webkit-transition: 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  transition: 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  -webkit-transition-delay: .8s;
+          transition-delay: .8s;
+}
+
+.overlay .overlayDoor:before {
+  left: 0;
+}
+
+.overlay .overlayDoor:after {
+  right: 0;
+}
+
+.overlay.loaded .overlayDoor:before {
+  left: -50%;
+}
+
+.overlay.loaded .overlayDoor:after {
+  right: -50%;
+}
+
+.overlay.loaded .overlayContent {
+  opacity: 0;
+  margin-top: -15px;
+}
+
+.overlay .overlayContent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  transition: 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+}
+
+.overlay .overlayContent .skip {
+  display: block;
+  width: 130px;
+  text-align: center;
+  margin: 50px auto 0;
+  cursor: pointer;
+  color: #34d186;
+  font-family: 'Nunito';
+  font-weight: 700;
+  padding: 12px 0;
+  border: 2px solid #34d186;
+  border-radius: 3px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.overlay .overlayContent .skip:hover {
+  background: #34d186;
+  color: #444;
+  border-color: #34d186;
+}
+
+.loader {
+  width: 128px;
+  height: 128px;
+  border: 3px solid #34d186;
+  border-bottom: 3px solid transparent;
+  border-radius: 50%;
+  position: relative;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loader .inner {
+  width: 64px;
+  height: 64px;
+  border: 3px solid transparent;
+  border-top: 3px solid #34d186;
+  border-radius: 50%;
+  -webkit-animation: spinInner 1s linear infinite;
+          animation: spinInner 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spinInner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-720deg);
+            transform: rotate(-720deg);
+  }
+}
+
+@keyframes spinInner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-720deg);
+            transform: rotate(-720deg);
+  }
+}
+/*# sourceMappingURL=.overlay {.css.map */
